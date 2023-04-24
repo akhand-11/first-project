@@ -29,7 +29,8 @@ function addTask(){
         saveData();
     }
 
- }, flase);
+ }, false);
+
  function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
  }
