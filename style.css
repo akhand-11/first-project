@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
@@ -8,7 +8,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: red;
+    background: rgb(193, 174, 174);
     padding: 10px;
 }
 .toDo-app{
@@ -72,9 +72,32 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: ;
+    background-image: url(image/unchecked.png);
     background-size: cover;
     background-position: center;
+    top: 12px;
+    left: 8px;
 
+}
+ul li.checked{
+    color: white;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(image/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px; 
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: blueviolet;
 }
 
