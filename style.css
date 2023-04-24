@@ -1,33 +1,44 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
+body{
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66, 165, 132);
+}
 
 .container{
-    width: 100%;
-    min-height: 100vh;
-    background: rgb(193, 174, 174);
-    padding: 10px;
+
+    width: 50%;
+    min-height: 50px;
+    background: rgb(177, 57, 121);
+    padding: 10px 10px;
+    margin: auto;
+    border-radius: 10px;
 }
 .toDo-app{
     width: 100%;
-    max-width: 540px;
+    min-width: 540px;
     background: blueviolet;
     margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    padding: 50px 30px 100px;
     border-radius: 10px;
 }
 .toDo-app h2{
-    color: azure;
+    color: rgb(155, 198, 198);
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    padding-left: 10px;
 }
 .toDo-app h2{
-    width: 30px;
-    margin-left: 10px;
+    width: 50px;
+    margin-left: 50px;
 }
 .row{
   display: flex;  
@@ -36,6 +47,7 @@
   background: yellowgreen;
   border-radius: 30px;
   padding-left: 20px;
+  margin-top: 20px;
   margin-bottom: 25px;
 }
 input{
@@ -44,10 +56,12 @@ input{
     outline: none;
     background: transparent;
     padding: 10px;
-    font-weight: 14px;
+    font-weight: 20px;
+    
 
 }
 button{
+    
     border: none;
     outline:none;
     padding: 16px 50px;
@@ -98,6 +112,6 @@ ul li span{
     border-radius: 50%;
 }
 ul li span:hover{
-    background: blueviolet;
+    background: rgb(174, 147, 201);
 }
 
